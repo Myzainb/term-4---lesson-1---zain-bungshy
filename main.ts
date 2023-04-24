@@ -16,3 +16,10 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
     basic.showString("Hi I'm Zain!")
 })
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    music.playSoundEffect(music.builtinSoundEffect(soundExpression.giggle), SoundExpressionPlayMode.UntilDone)
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    basic.showIcon(IconNames.House)
+    basic.showString("UGLY RAT")
+    basic.showIcon(IconNames.Heart)
+})
